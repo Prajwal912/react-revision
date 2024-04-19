@@ -1,3 +1,120 @@
-.sharedImageStyles {
-    border-radius: 50px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.zomato-world {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+}
+.zomato-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  transition: ease-in-out 0.5s;
+}
+
+.zomato-img:hover {
+  transform: scale(1.1);
+}
+small {
+  display: block;
+  color: brown;
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+hr {
+  margin: 1rem 0;
+  border: 0;
+  border-top: 1px solid;
+  opacity: .25;
+  padding-bottom: 10px;
+}
+
+.desc {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+.cat:hover::after,
+.zomato-img:hover ~ .cat::after {
+  width: 100%;
+}
+.header {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+.cat {
+  font-size: 22px;
+  font-weight: 500;
+  color: rgb(82, 79, 79);
+  margin-top: 30px;
+  transition: all 0.5s;
+  position: relative;
+  display: inline-block;
+}
+
+.cat::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  width: 0;
+  bottom: 0;
+  height: 1px;
+  background-color: gray;
+  transition: width 0.5s;
+  transform-origin: left;
+}
+
+.card-text {
+  margin-left: 10px;
+}
+.zomato-restraunt {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.restraunt {
+  width: 30%;
+  padding: 8px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: all 0.5s;
+  border-radius: 8px;
+}
+.restraunt:hover {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+  cursor: pointer;
+}
+.restraunt-img {
+  width: 100%;
+  border-radius: 6px;
+  object-fit: cover;
+}
+.restraunt-name {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 10px 0  ;
+   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; 
+}
+
+/* navbar */
+
+.navbar{
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+/* form */
