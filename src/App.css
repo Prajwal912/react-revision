@@ -118,3 +118,42 @@ hr {
 }
 
 /* form */
+
+.contact-info{
+  width: 50%;
+  text-align: center;
+  padding-top: 50px;
+}
+.contact-form{
+  width: 50%;
+}
+.contact-text{
+  color: rgb(86, 85, 85);
+}
+.form{
+  width: 60%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+.form-label{
+  font-size: 18px;
+  color: rgb(90, 90, 90);
+}
+.form-input{
+  width: 100%;
+  padding: 6px;
+  margin-top: 6px;
+  border: 1px solid lightgray;
+  margin-bottom: 15px;
+}
+.form-input:active{
+  border: 1px solid brown;
+}
+.form-btn{
+  width: 100%;
+   background: #000;
+   color: aliceblue;
+   padding: 10px ;
+}
