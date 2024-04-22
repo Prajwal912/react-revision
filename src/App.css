@@ -4,12 +4,11 @@
   box-sizing: border-box;
 }
 
-body  {
+body {
   font-family: "Exo 2", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  
 }
 
 a:hover {
@@ -130,6 +129,31 @@ hr {
   margin: 0 auto;
 }
 
+.contact {
+  background: brown;
+  color: aliceblue;
+  font-weight: bold;
+  padding: 10px 40px;
+  transition: all 0.5s;
+  border: 1px solid transparent;
+  border-radius: 50px;
+}
+
+.head-inp {
+  width: 100%;
+  padding: 6px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  border: 2px solid #000;
+  outline-color: brown;
+}
+
+.contact:hover {
+  background: aliceblue;
+  color: brown;
+  border: 1px solid brown;
+}
+
 /* form */
 
 .contact-info {
@@ -202,9 +226,15 @@ hr {
   justify-content: space-evenly;
   align-items: center;
 }
-.cards {
-}
 .copyright-text {
   font-weight: 700;
-  
+}
+.head-span {
+  position: relative;
+}
+.head-span i {
+  position: absolute;
+  right: 10px;
+  top: 30%;
+  font-size: 18px;
 }
