@@ -3,16 +3,16 @@ import React from "react";
 const Form = () => {
   return (
     <>
-      <div className="flex">
+      <div className="flex justify-center">
         <div className="flex items-center justify-center flex-col	w-[50%]">
-          <p>Heading Here</p>
-          <address>Shops 2-4/85 S Perth Esplanade, South Perth 6151</address>
-          <p>(08) 9474 2200</p>
-          <p>Email Us</p>
+          <h1 className="mb-10 form-head">Heading Here</h1>
+          <address className=""><b>Address: </b>Shops 2-4/85 S Perth Esplanade, South Perth 6151</address>
+          <p><a href="tel:9876543232"><b>Call: </b> (08) 9474 2200</a></p>
+          <p> <a href="mailto:example@example.com"><b>Mail: </b>example@example.com</a></p>
         </div>
        
          
-          <div className="contact-form">
+          <div className="contact-form w-[50%]">
             <form className="form">
               <label className="form-label">Name</label>
               <br></br>
@@ -47,8 +47,7 @@ const Form = () => {
               <br></br>
               <button className="form-btn">Submit</button>
             </form>
-          </div>
-              
+          </div> 
         </div>
     </>
   );
